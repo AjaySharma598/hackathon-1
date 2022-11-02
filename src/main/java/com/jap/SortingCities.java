@@ -26,9 +26,9 @@ public class SortingCities {
 
 
         int[] sortedDistanceInKm = sortingCities.sortedDistanceInKm(cityName, cityDistanceInKm);
-        System.out.println("sorted list");
+        System.out.println("sorted list in Km : ");
         for (int index = 0; index <sortedDistanceInKm.length ; index++) {
-            System.out.println(sortedDistanceInKm[index]);
+            System.out.println(sortedDistanceInKm[index]+" KM");
         }
     }
 
@@ -64,7 +64,7 @@ public class SortingCities {
     {
         for (int pass = 1; pass <cityDistanceInKm.length ; pass++)
         {
-            for (int index = 0; index < cityDistanceInKm.length-1 ; index++)
+            for ( int index = 0; index < cityDistanceInKm.length-1 ; index++)
             {
                  if(cityDistanceInKm[index]>cityDistanceInKm[index+1])
                  {
