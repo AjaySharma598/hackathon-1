@@ -37,14 +37,28 @@ public class SortingCitiesTest {
 
     @Test
     public void toCheckCityAwayFromZurich52Km()
-    {String[] cityName = {"Bern", "Lucerne", "Interlaken", "Grindelwald", "Engelberg", "Geneva", "Murren", "Basel", "Zermatt", "Jungfraujoch" };
-        String[] cityDistance = {"138", "52", "118", "136", "85", "276", "103", "87", "214", "101" };
+    {//arrange
+        String[] cityName = {"Bern", "Lucerne", "Interlaken", "Grindelwald", "Engelberg", "Geneva", "Murren", "Basel", "Zermatt", "Jungfraujoch" };
+
+        int[] cityDistanceInKm = {138,52,118,136,85,276,103,87,214,101};
         String expectedResult="Lucerne";
-        String actualResult=sortingCities.findTheCityDistanceFromZurich52(cityName,cityDistance);
+        //act
+        String actualResult=sortingCities.findTheCityDistanceFromZurich52(cityName,cityDistanceInKm);
+        //assert
         assertEquals(expectedResult,actualResult);
     }
 
     @Test
-    public void name() {
+    public void wayFromZurichGreaterAndEqualTo270()
+    {
+        //arrange
+        {String[] cityName = {"Bern", "Lucerne", "Interlaken", "Grindelwald", "Engelberg", "Geneva", "Murren", "Basel", "Zermatt", "Jungfraujoch" };
+            int[] cityDistanceInKm = {138,52,118,136,85,276,103,87,214,101};
+            String expectedResult="Geneva";
+         //act
+            String actualResult=sortingCities.findTheCitiesFromZurichMoreThanAndEqualTo270(cityName,cityDistanceInKm);
+            //assert
+            assertEquals(expectedResult,actualResult);
     }
+}
 }
