@@ -10,6 +10,8 @@ public class SortingCities {
         String[] cityDistance = {"138", "52", "118", "136", "85", "276", "103", "87", "214", "101" };
         int[] cityDistanceInKm={138,52,118,136,85,276,103,87,214,101};
         SortingCities sortingCities = new SortingCities();
+
+
         System.out.println("The city Name in Upper Case : ");
         for (int index = 0; index < cityName.length; index++) {
 
@@ -20,7 +22,8 @@ public class SortingCities {
         String cityNameDistanceFromZurich = sortingCities.findTheCityDistanceFromZurich52(cityName, cityDistance);
         System.out.println();
         System.out.println("The City Which Is 52 From Zurich is : " + cityNameDistanceFromZurich);
-        ;
+
+
         String theCitiesFromZurichMoreThanAndEqualTo270 = sortingCities.findTheCitiesFromZurichMoreThanAndEqualTo270(cityName, cityDistance);
         System.out.println("The cities which are greater than and equal to 270 km fromZurich is :" + theCitiesFromZurichMoreThanAndEqualTo270);
 
