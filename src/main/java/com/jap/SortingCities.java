@@ -38,7 +38,7 @@ public class SortingCities
     {
         for (int index = 0; index <cityName.length ; index++)
         {
-            if(cityDistance.equals("")==cityDistance.equals("52"))
+            if(cityDistance[index].equals("52"))
             {
                  return cityName[index];
             }
