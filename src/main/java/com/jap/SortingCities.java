@@ -36,10 +36,9 @@ public class SortingCities
     }
     public String findTheCityDistanceFromZurich52(String [] cityName,String[] cityDistance)
     {
-        //String findCity=cityDistance[0];
-        for (int index = 0; index <cityDistance.length ; index++)
+        for (int index = 0; index <cityName.length ; index++)
         {
-            if(cityDistance.equals("52"))
+            if(cityDistance.equals("")==cityDistance.equals("52"))
             {
                  return cityName[index];
             }
