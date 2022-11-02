@@ -34,4 +34,13 @@ public class SortingCitiesTest {
     }
 
     //write all the test cases here
+
+    @Test
+    public void toCheckCityAwayFromZurich52Km()
+    {String[] cityName = {"Bern", "Lucerne", "Interlaken", "Grindelwald", "Engelberg", "Geneva", "Murren", "Basel", "Zermatt", "Jungfraujoch" };
+        String[] cityDistance = {"138", "52", "118", "136", "85", "276", "103", "87", "214", "101" };
+        String expectedResult="Lucerne";
+        String[] actualResult=sortingCities.findTheCityDistanceFromZurich52(cityName[0],cityDistance[]);
+        assertEquals(expectedResult,actualResult);
+    }
 }
