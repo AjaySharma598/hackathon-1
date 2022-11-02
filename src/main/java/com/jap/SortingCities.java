@@ -17,9 +17,20 @@ public class SortingCities
             String upperCaseCityName=sortingCities.convertToUpperCase(cityName[index]);
             System.out.print( " " +upperCaseCityName +",");
         }
+
+           String cityNameDistanceFromZurich= sortingCities.findTheCityDistanceFromZurich52(cityDistance);
+
+        System.out.println("The City Which Is 52 From Zurich is : "+cityNameDistanceFromZurich);
     }
     public String convertToUpperCase(String name) {
         String upperCaseName = name.toUpperCase();
         return upperCaseName;
+    }
+    public String findTheCityDistanceFromZurich52(int[] cityDistance)
+    {
+
+
+
+        return "";
     }
 }
