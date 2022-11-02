@@ -46,7 +46,7 @@ public class SortingCities {
 
     public String findTheCitiesFromZurichMoreThanAndEqualTo270(String[] cityName, String[] cityDistance) {
         for (int index = 0; index < cityName.length; index++) {
-            if (cityDistance[index].endsWith("270")) {
+            if (cityDistance[index].startsWith("27")) {
                 return cityName[index];
             }
         }
