@@ -43,4 +43,8 @@ public class SortingCitiesTest {
         String actualResult=sortingCities.findTheCityDistanceFromZurich52(cityName,cityDistance);
         assertEquals(expectedResult,actualResult);
     }
+
+    @Test
+    public void name() {
+    }
 }
