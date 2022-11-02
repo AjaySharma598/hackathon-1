@@ -31,7 +31,8 @@ public class SortingCities {
         int[] sortedDistanceInKm = sortingCities.sortedDistanceInKm(cityName, cityDistanceInKm);
         System.out.println("sorted list in Km : ");
         for (int index = 0; index <sortedDistanceInKm.length ; index++) {
-            System.out.println(sortedDistanceInKm[index]+" KM");
+            System.out.println(sortedDistanceInKm[index]+" KM  -- "+cityName[index]);
+
         }
     }
 
@@ -48,7 +49,8 @@ public class SortingCities {
 
     public String findTheCityDistanceFromZurich52(String[] cityName, String[] cityDistance) {
         for (int index = 0; index < cityName.length; index++) {
-            if (cityDistance[index].equals("52")) {
+            if (cityDistance[index].equals("52")) // cityDistanceInKM[index] == 52
+            {
                 return cityName[index];
             }
         }
@@ -74,6 +76,10 @@ public class SortingCities {
                      int temp=cityDistanceInKm[index];
                      cityDistanceInKm[index]=cityDistanceInKm[index+1];
                      cityDistanceInKm[index+1]=temp;
+
+                     String temp1=cityName[index];
+                     cityName[index]=cityName[index+1];
+                     cityName[index+1]=temp1;
                  }
             }
         }
